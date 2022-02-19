@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import swal from 'sweetalert';
 import axios from 'axios';
 
 class Data extends Component {
@@ -20,6 +21,24 @@ class Data extends Component {
         }
     }
 
+    daleteData = async (e, id) => {
+        const thidClickedFunda = e.currentTarget;
+        // thidClickedFunda.innerText = "Deleting";
+
+        const res = await axios.delete(`http://127.0.0.1:8000/api/delete-data/${id}`);
+        if(res.data.status === 200) {
+            thidClickedFunda.closest("tr").remove();
+
+            // console.log(res.data.message);
+            swal({
+                title: "Deleted!",
+                text: res.data.message,
+                icon: "success",
+                button: "Ok!",
+            });
+        }
+    }
+
     render() {
 
         var data_HTMLTABLE = "";
@@ -32,14 +51,13 @@ class Data extends Component {
             this.state.datas.map( (item) => {
                 return (
                     <tr key={item.id}>
-                        {/* <td>{item.id}</td> */}
                         <td>{item.title}</td>
                         <td>{item.detail}</td>
                         <td>
                             <Link to={`edit-data/${item.id}`} className="btn btn-success btn-sm">Edit</Link>
                         </td>
                         <td>
-                            <button type="button" className="btn btn-danger btn-sm">Delete</button>
+                            <button type="button" onClick={(e) => this.daleteData(e, item.id)} className="btn btn-danger btn-sm">Delete</button>
                         </td>
                     </tr>
                 );
@@ -60,7 +78,6 @@ class Data extends Component {
                                 <table className="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            {/* <th>ID</th> */}
                                             <th>Title</th>
                                             <th>Detail</th>
                                             <th>Edit</th>

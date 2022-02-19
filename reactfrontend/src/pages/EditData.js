@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import swal from 'sweetalert';
 import axios from 'axios';
 
 class EditData extends Component {
@@ -16,21 +17,41 @@ class EditData extends Component {
     }
 
     async componentDidMount() {
-        // const aid = useParams();
-        // console.log(id); 51.17 https://www.youtube.com/watch?v=NidmTs2xZaE
+        const queryString = window.location.pathname;
+        // console.log(queryString);
+        const id = queryString.split("/");
+        // console.log(id[2]);
+        const res = await axios.get(`http://127.0.0.1:8000/api/edit-data/${id[2]}`);
+        if(res.data.status === 200) {
+            this.setState({
+                title: res.data.data.title,
+                detail: res.data.data.detail,
+            });
+        }
     }
 
     updateData = async (e) => {
         e.preventDefault();
+        
+        document.getElementById('updatebtn').disabled = true;
+        document.getElementById('updatebtn').innerText = "Updating";
 
-        // const res = await axios.post('http://127.0.0.1:8000/api/add-data', this.state);
-        // if(res.data.status === 200) {
-        //     console.log(res.data.message);
-        //     this.setState({
-        //         title: '',
-        //         detail: '',
-        //     });
-        // }
+        const queryString = window.location.pathname;
+        const id = queryString.split("/");
+
+        const res = await axios.put(`http://127.0.0.1:8000/api/update-data/${id[2]}`, this.state);
+        if(res.data.status === 200) {
+            // console.log(res.data.message);
+            swal({
+                title: "Updated!",
+                text: res.data.message,
+                icon: "success",
+                button: "Ok!",
+            });
+
+            document.getElementById('updatebtn').disabled = false;
+            document.getElementById('updatebtn').innerText = "Update Data";
+        }
     }
 
     render() {
@@ -55,7 +76,7 @@ class EditData extends Component {
                                         <input type="text" name="detail" onChange={this.handleInput} value={this.state.detail} className="form-control" />
                                     </div>
                                     <div className="form-group mb-3">
-                                        <button type="submit" className="btn btn-primary">Update Data</button>
+                                        <button type="submit" id="updatebtn" className="btn btn-primary">Update Data</button>
                                     </div>
                                 </form>
                             </div>
