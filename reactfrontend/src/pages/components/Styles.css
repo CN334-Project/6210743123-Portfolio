@@ -2,8 +2,8 @@
 
 .homePage {
     padding-top: 6%;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
   
 .split {
@@ -18,26 +18,32 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.splitleft .subtitle {
+.welcome .subtitle {
     letter-spacing: 3px;
     font-size: 15px;
 }
 
-.splitleft .title {
-    padding-top: 20px;
+.welcome .title {
+    padding-top: 30px;
     font-size: 60px;
+    font-weight: bold;
 }
 
-.splitleft .header {
-    padding-top: 10px;
+.welcome .title .nickname {
+    color: #ff014f;
+}
+
+.welcome .header {
+    padding-top: 15px;
     font-size: 45px;
     position: relative;
     color: #ecf0f3;
-    -webkit-text-stroke: 0.5px #383d52;
+    font-weight: bold;
+    -webkit-text-stroke: 0.1px #383d52;
 }
 
-.splitleft .header::before {
-    padding-top: 8px;
+.welcome .header::before {
+    padding-top: 12px;
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -48,15 +54,15 @@
     -webkit-text-stroke: 0px #383d52;
 }
 
-.splitleft .header-caption {
+.welcome .header-caption {
     padding-top: 10px;
     font-size: 45px;
     position: relative;
     color: #ecf0f3;
-    -webkit-text-stroke: 0.5px #383d52;
+    -webkit-text-stroke: 0.1px #383d52;
 }
 
-.splitleft .header-caption::before {
+.welcome .header-caption::before {
     padding-top: 8px;
     content: attr(data-text);
     position: absolute;
@@ -80,15 +86,121 @@
     }
 }
 
+.welcome .description {
+    padding-top: 30px;
+    padding-right: 100px;
+}
+
+.splitleft .row {
+    padding-top: 390px;
+}
+
+.splitleft .row .title {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* .social-share-inner-left */
+.social-share-inner-left .skill-share {
+    padding: 0;
+}
+
+.social-share-inner-left li {
+    width: 60px;
+    height: 60px;
+    margin: 12px 12px;
+    line-height: 55px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.social-share-inner-left li:hover {
+    top: -5px;
+}
+
+.social-share-inner-left img {
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+/* .social-share-inner-right */
+.skill-share-inner .skill-share {
+    padding: 0;
+}
+
+.skill-share-inner li {
+    width: 60px;
+    height: 60px;
+    margin: 12px 12px;
+    line-height: 55px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.skill-share-inner li:hover {
+    top: -5px;
+}
+
+.skill-share-inner img {
+    width: 30px;
+    height: 30px;
+}
+
 /* .splitright */
 .splitright {
     display: table-cell;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
 }
 
-.splitright .title {
-    padding-top: 50px;
+.splitright .welcome .subtitle {
+    color: rgba(0, 0, 0, 0);
+}
+
+.splitright .image li {
+    width: 480px;
+    height: 460px;
+    margin: 200px 180px;
+    line-height: 55px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.splitright .image .img-show img {
+    /* width: 172px;
+    height: 223px; */
+    width: 516px;
+    height: 669px;
+    margin-top: -201px;
+    margin-left: -15px;
 }
 
 /* .test */

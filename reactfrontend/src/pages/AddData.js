@@ -47,7 +47,7 @@ class AddData extends Component {
         return (
             <div className="container">
                 <div className="row"> 
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                         <div className="card">
                             <div className="card-header">
                                  <h4>Add Data

@@ -1,5 +1,6 @@
 import React, {Component, useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 import './Home.css';
 import HomePage from './components/HomePage';
@@ -11,12 +12,41 @@ import ContactPage from './components/ContactPage';
 
 class Home extends Component {
 
+    state = {
+        datas: [],
+    }
+
+    async componentDidMount() {
+        const res = await axios.get('http://127.0.0.1:8000/api/datas');
+        console.log(res.data.datas);
+        if(res.data.status === 200) {
+            this.setState({
+                datas: res.data.datas,
+            });
+        }
+    }
+
     render() {
+
+        var name = "";
+
+        name =
+        this.state.datas.map( (item) => {
+
+            if(item.title == "Logo") {
+                return (
+                    <div key={item.id} className="logo">
+                        <a  href="http://localhost:3000/admin" target="_blank">{item.detail}</a>
+                    </div>
+                );
+            }
+            
+        });
         
         return (
             <div>
                 <header>
-                    <a href="/">POOM</a>
+                    {name}
                     <nav>
                         <ul className="nav_links">
                             <li><a href="#HomeSection">HOME</a></li>
@@ -28,7 +58,7 @@ class Home extends Component {
                         </ul>
                     </nav> 
                 </header>
-                <div className="SectionContainer">
+                <div className="SectionContainer" id="navbar">
                     <div id="HomeSection" className="HomeSection">
                         <HomePage />
                     </div>

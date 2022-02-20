@@ -21,6 +21,11 @@ header {
     align-items: center;
     padding: 15px 5%;
     background-color: #ecf0f3;
+    background-image: linear-gradient(190deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+}
+
+.logo a:hover {
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .nav_links {
@@ -40,7 +45,14 @@ header {
 }
 
 .nav_links li a:hover {
-    color: rgba(0, 0, 0, 0.4);
+    color: #ff014f;
+}
+
+#navbar {
+    background-color: #ecf0f3;
+    position: fixed;
+    width: 100%;
+    /* transition: top 1s; */
 }
 
 /* height 100vh width 100vw */
@@ -48,6 +60,10 @@ header {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     max-height: 95.7vh;
+}
+
+.container .row {
+    margin-top: 300px;
 }
 
 .HomeSection {
