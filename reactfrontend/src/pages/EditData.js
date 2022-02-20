@@ -21,7 +21,7 @@ class EditData extends Component {
         // console.log(queryString);
         const id = queryString.split("/");
         // console.log(id[2]);
-        const res = await axios.get(`http://127.0.0.1:8000/api/edit-data/${id[2]}`);
+        const res = await axios.get(`http://127.0.0.1:8000/api/edit-data/${id[3]}`);
         if(res.data.status === 200) {
             this.setState({
                 title: res.data.data.title,
@@ -39,7 +39,7 @@ class EditData extends Component {
         const queryString = window.location.pathname;
         const id = queryString.split("/");
 
-        const res = await axios.put(`http://127.0.0.1:8000/api/update-data/${id[2]}`, this.state);
+        const res = await axios.put(`http://127.0.0.1:8000/api/update-data/${id[3]}`, this.state);
         if(res.data.status === 200) {
             // console.log(res.data.message);
             swal({
@@ -48,6 +48,8 @@ class EditData extends Component {
                 icon: "success",
                 button: "Ok!",
             });
+
+            document.location.href = "http://localhost:3000/admin/";
 
             document.getElementById('updatebtn').disabled = false;
             document.getElementById('updatebtn').innerText = "Update Data";
@@ -62,7 +64,7 @@ class EditData extends Component {
                         <div className="card">
                             <div className="card-header">
                                  <h4>Edit Data
-                                    <Link to={'/'} className="btn btn-primary btn-sm float-end"> BACK </Link>
+                                    <Link to={'/admin'} className="btn btn-primary btn-sm float-end"> BACK </Link>
                                  </h4>
                             </div>
                             <div className="card-body">

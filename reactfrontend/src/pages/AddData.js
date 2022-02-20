@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory } from 'react-router-dom';
 import swal from 'sweetalert';
 import axios from 'axios';
 
@@ -30,6 +30,8 @@ class AddData extends Component {
                 button: "Ok!",
             });
 
+            document.location.href = "http://localhost:3000/admin/";
+
             this.setState({
                 title: '',
                 detail: '',
@@ -49,7 +51,7 @@ class AddData extends Component {
                         <div className="card">
                             <div className="card-header">
                                  <h4>Add Data
-                                    <Link to={'/'} className="btn btn-primary btn-sm float-end"> BACK </Link>
+                                    <Link to={'/admin'} className="btn btn-primary btn-sm float-end"> BACK </Link>
                                  </h4>
                             </div>
                             <div className="card-body">
