@@ -46,7 +46,10 @@ class Home extends Component {
         return (
             <div>
                 <header>
-                    {name}
+                    {/* {name} */}
+                    <div className="logo">
+                        <a  href="http://localhost:3000/admin" target="_blank">POOM</a>
+                    </div>
                     <nav>
                         <ul className="nav_links">
                             <li><a href="#HomeSection">HOME</a></li>

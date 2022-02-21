@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.resumepage .bar {
+    text-align: center;
+}
+
+.resumepage .bar .hide span {
+    color: rgba(0, 0, 0, 0)
+}
+
+.resumepage .bar .menu-bar {
+    background-color: #ecf0f3;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-top: 100px;
+    width: 660px;
+    height: 80px;
+    line-height: 55px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.resumepage .bar .menu-bar .item {
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 330px;
+    height: 80px;
+    padding: 14px 50px;
+    border-radius: 6px;
+}
+
+.resumepage .bar .menu-bar .item:hover {
+    color: #ff014f;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* .resumepage .split */
+.resumepage .split {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding-top: 4%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* .splitleft */
+.resumepage .split .splitleft {
+    display: table-cell;
+    font-family: "Montserrat", sans-serif;
+}
+
+.resumepage .split .splitleft .welcome {
+    padding-left: 100px;
+}
+
+.resumepage .split .splitleft .welcome .subtitle {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #ff014f;
+    padding-left: 3px;
+}
+
+.resumepage .split .splitleft .welcome .title {
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* .highschool */
+.resumepage .split .splitleft .welcome .highschool {
+    width: 600px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.resumepage .split .splitleft .welcome .highschool .school {
+    margin-top: 45px;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+
+.resumepage .split .splitleft .welcome .highschool .department {
+    margin-top: 45px;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.resumepage .split .splitleft .welcome .highschool .current {
+    margin-top: 45px;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.resumepage .split .splitleft .welcome .highschool .current .gpa {
+    font-size: 25px;
+}
+
+/* .codinglanguages */
+.resumepage .split .splitleft .welcome .codinglanguages {
+    width: 600px;
+    height: 440px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .languages {
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar {
+    margin: 0 5%;
+    background: #dce1e4;
+    display: block;
+    height: 11px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar span {
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 5px;
+    float: left;
+    background: #ff014f;
+    border-radius: 5px;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar .python {
+    width: 90%;
+    animation: python 2s;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar .java {
+    width: 80%;
+    animation: java 2s;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar .javascript {
+    width: 85%;
+    animation: javascript 2s;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar .typescript {
+    width: 75%;
+    animation: typescript 2s;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar .html {
+    width: 95%;
+    animation: html 2s;
+}
+
+.resumepage .split .splitleft .welcome .codinglanguages .bar .css {
+    width: 80%;
+    animation: css 2s;
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 90%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 80%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 85%;
+    }
+}
+
+@keyframes typescript {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 75%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 95%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 80%;
+    }
+}
+
+/* .splitright */
+.resumepage .split .splitright {
+    display: table-cell;
+    font-family: "Montserrat", sans-serif;
+}
+
+.resumepage .split .splitright .welcome {
+    padding-left: 0px;
+}
+
+.resumepage .split .splitright .welcome .subtitle {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #ff014f;
+    padding-left: 3px;
+}
+
+.resumepage .split .splitright .welcome .title {
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* .bachelordegrees */
+.resumepage .split .splitright .welcome .bachelordegrees {
+    width: 600px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.resumepage .split .splitright .welcome .bachelordegrees .university {
+    margin-top: 45px;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+
+.resumepage .split .splitright .welcome .bachelordegrees .department {
+    margin-top: 45px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.resumepage .split .splitright .welcome .bachelordegrees .current {
+    margin-top: 45px;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.resumepage .split .splitright .welcome .bachelordegrees .current .gpa {
+    font-size: 25px;
+}
+
+/* .frameworks */
+.resumepage .split .splitright .welcome .frameworks {
+    width: 600px;
+    height: 240px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.resumepage .split .splitright .welcome .frameworks .languages {
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.resumepage .split .splitright .welcome .frameworks .bar {
+    margin: 0 5%;
+    background: #dce1e4;
+    display: block;
+    height: 11px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.resumepage .split .splitright .welcome .frameworks .bar span {
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 5px;
+    float: left;
+    background: #ff014f;
+    border-radius: 5px;
+}
+
+.resumepage .split .splitright .welcome .frameworks .bar .react {
+    width: 90%;
+    animation: react 2s;
+}
+
+.resumepage .split .splitright .welcome .frameworks .bar .reactnative {
+    width: 85%;
+    animation: reactnative 2s;
+}
+
+.resumepage .split .splitright .welcome .frameworks .bar .laravel {
+    width: 80%;
+    animation: laravel 2s;
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 90%;
+    }
+}
+
+@keyframes reactnative {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 85%;
+    }
+}
+
+@keyframes laravel {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 80%;
+    }
+}
+
+@keyframes typescript {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 75%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 95%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 80%;
+    }
+}

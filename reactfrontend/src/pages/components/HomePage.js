@@ -1,7 +1,7 @@
 import React, {Component, useState, useEffect } from 'react';
 import axios from 'axios';
 
-import './Styles.css';
+import './HomePage.css';
 
 class HomePage extends Component {
 
