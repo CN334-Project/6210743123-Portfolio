@@ -57,61 +57,54 @@ your description
 
 6.
 Title Name
-EandS
-
-Details
-0 {0 must be entered}
-
-7.
-Title Name
 HSyear
 
 Details
 high school year { Ex. 2013 - 2018}
 
-8.
+7.
 Title Name
 HSname
 
 Details
 high school name
 
-9.
+8.
 Title Name
 HSdepartment
 
 Details
 high school department { Ex. Math Sci}
 
-10.
+9.
 Title Name
 HSgpa
 
 Details
 high school gpa { Ex. 4.00}
 
-11.
+10.
 Title Name
 BDyear
 
 Details
 university year { Ex. 2019 - Present}
 
-12.
+11.
 Title Name
 BDname
 
 Details
 university name
 
-13.
+12.
 Title Name
 BDdepartment
 
 Details
 university department { Ex. Engineering}
 
-14.
+13.
 Title Name
 BDgpa
 

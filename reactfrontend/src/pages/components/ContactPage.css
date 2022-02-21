@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.contactpage .bar {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contactpage .bar .welcome .hide {
+    color: rgba(0, 0, 0, 0);
+}
+
+.contactpage .bar .welcome .subtitle {
+    padding-top: 60px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ff014f;
+}
+
+.contactpage .bar .welcome .title {
+    padding-top: 10px;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.contactpage .split {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* .splitleft */
+.contactpage .split .splitleft {
+    display: table-cell;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contactpage .split .splitleft .welcome {
+    margin-left: 30px;
+}
+
+.contactpage .split .splitleft .welcome .contact {
+    width: 600px;
+    height: 745px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.contactpage .split .splitleft .welcome .contact .name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.contactpage .split .splitleft .welcome .contact .business {
+    font-size: 20px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.contactpage .split .splitleft .welcome .contact .description {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.8;
+}
+
+.contactpage .split .splitleft .welcome .contact .subdescription {
+    font-size: 18px;
+}
+
+.contactpage .split .splitleft .welcome .contact .findwithme {
+    font-size: 15px;
+    margin-top: 180px;
+    margin-left: 40px;
+}
+
+.contactpage .split .splitleft .welcome .contact .skill-share li {
+    width: 60px;
+    height: 60px;
+    margin: 12px 12px;
+    line-height: 55px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.contactpage .split .splitleft .welcome .contact .skill-share li:hover {
+    top: -5px;
+}
+
+.contactpage .split .splitleft .welcome .contact .skill-share img {
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+/* .splitright */
+.contactpage .split .splitright {
+    display: table-cell;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contactpage .split .splitright .welcome {
+    margin-left: -40px;
+    position: absolute;
+}
+
+.contactpage .split .splitright .welcome .contact {
+    width: 710px;
+    height: 745px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.contactpage .split .splitright .welcome .contact .from {
+    margin-left: 40px;
+}
+
+.contactpage .split .splitright .welcome .contact .from .yourname {
+    margin-top: 40px;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.contactpage .split .splitright .welcome .contact .from .phonenumber {
+    margin-top: 40px;
+    font-size: 14px;
+    margin-left: 236px;
+}
+
+/* .yournameinput */
+.contactpage .split .splitright .welcome .contact .from .yournameinput {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #56575a;
+    border-radius: 6px;
+    border: 2px solid #dadada;
+    width: 300px;
+    height: 50px;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contactpage .split .splitright .welcome .contact .from .yournameinput:focus {
+    border: 2px solid #ff014f;
+}
+
+/* .phonenumberinput */
+.contactpage .split .splitright .welcome .contact .from .phonenumberinput {
+    margin-top: 15px;
+    margin-left: 28px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #56575a;
+    border-radius: 6px;
+    border: 2px solid #dadada;
+    width: 300px;
+    height: 50px;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contactpage .split .splitright .welcome .contact .from .phonenumberinput:focus {
+    border: 2px solid #ff014f;
+}
+
+/* .youremail */
+.contactpage .split .splitright .welcome .contact .from .youremail {
+    margin-top: 40px;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.contactpage .split .splitright .welcome .contact .from .youremailinput {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #56575a;
+    border-radius: 6px;
+    border: 2px solid #dadada;
+    width: 628px;
+    height: 50px;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contactpage .split .splitright .welcome .contact .from .youremailinput:focus {
+    border: 2px solid #ff014f;
+}
+
+/* .yoursubject */
+.contactpage .split .splitright .welcome .contact .from .yoursubject {
+    margin-top: 40px;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.contactpage .split .splitright .welcome .contact .from .yoursubjectinput {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #56575a;
+    border-radius: 6px;
+    border: 2px solid #dadada;
+    width: 628px;
+    height: 50px;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contactpage .split .splitright .welcome .contact .from .yoursubjectinput:focus {
+    border: 2px solid #ff014f;
+}
+
+/* .yourmessage */
+.contactpage .split .splitright .welcome .contact .from .yourmessage {
+    margin-top: 40px;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.contactpage .split .splitright .welcome .contact .from .yourmessageinput {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #56575a;
+    border-radius: 6px;
+    border: 2px solid #dadada;
+    box-sizing: border-box;
+    resize: none;
+    width: 628px;
+    height: 150px;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contactpage .split .splitright .welcome .contact .from .yourmessageinput:focus {
+    border: 2px solid #ff014f;
+}
+
+/* .send */
+.contactpage .split .splitright .welcome .contact .from .send {
+    margin-top: 35px;
+}
+
+.contactpage .split .splitright .welcome .contact .from .send .sendmessage {
+    padding: 0px;
+}
+
+.contactpage .split .splitright .welcome .contact .from .send .sendmessage li {
+    width: 628px;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.contactpage .split .splitright .welcome .contact .from .send .sendmessage li:hover {
+    /* background-color: #ff014f; */
+    background-image: linear-gradient(330deg, #fff1f5 5%, #ff014f 100%);
+    color: white;
+    top: -5px;
+}

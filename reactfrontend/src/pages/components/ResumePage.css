@@ -2,17 +2,31 @@
 
 .resumepage .bar {
     text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
 
-.resumepage .bar .hide span {
-    color: rgba(0, 0, 0, 0)
+.resumepage .bar .welcome .hide {
+    color: rgba(0, 0, 0, 0);
+}
+
+.resumepage .bar .welcome .subtitle {
+    padding-top: 60px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ff014f;
+}
+
+.resumepage .bar .welcome .title {
+    padding-top: 10px;
+    font-size: 65px;
+    font-weight: bold;
 }
 
 .resumepage .bar .menu-bar {
     background-color: #ecf0f3;
     justify-content: flex-start;
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 660px;
     height: 80px;
     line-height: 55px;
@@ -51,7 +65,7 @@
     display: table;
     width: 100%;
     table-layout: fixed;
-    padding-top: 4%;
+    padding-top: 3%;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -235,6 +249,7 @@
 .resumepage .split .splitright {
     display: table-cell;
     font-family: "Montserrat", sans-serif;
+    padding-left: 2%;
 }
 
 .resumepage .split .splitright .welcome {
@@ -389,4 +404,35 @@
     } 100% {
         width: 80%;
     }
+}
+
+/* .slider-container */
+.resumepage .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumepage .slider-container .slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.resumepage .slider-container .slider .slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.resumepage .slider-container .slider .slides .slide {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 700px;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    transform-origin: center center;
+    /* transform: scale(1); */
 }

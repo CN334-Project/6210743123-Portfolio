@@ -58,7 +58,7 @@ class HomePage extends Component {
                                 <div className="social-share-inner-left">
                                     <span className="title">FIND WITH ME</span>
                                     <ul className="skill-share d-flex liststyle">
-                                        <li><a  href="https://www.facebook.com/p2om.hmp" target="_blank"><img src={require('./assets/images/icons/icons-facebook.png')} alt="Icons Images"/></a></li>
+                                        <li><a  href="https://www.instagram.com/p2omhmp/" target="_blank"><img src={require('./assets/images/icons/icons-facebook.png')} alt="Icons Images"/></a></li>
                                         <li><a  href="https://www.instagram.com/p2omhmp/" target="_blank"><img src={require('./assets/images/icons/icons-instagram.png')} alt="Icons Images"/></a></li>
                                         <li><a  href="https://www.linkedin.com/in/heammapoom-wittayawarojkit-28a172132/" target="_blank"><img src={require('./assets/images/icons/icons-linkedin.png')} alt="Icons Images"/></a></li>
                                     </ul>
