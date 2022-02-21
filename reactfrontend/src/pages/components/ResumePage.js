@@ -40,7 +40,7 @@ class ResumePage extends Component {
         const queryString = window.location.pathname;
         const id = queryString.split("/");
 
-        const res = await axios.put(`http://127.0.0.1:8000/api/update-data/46`, this.stateEandS);
+        const res = await axios.put(`http://127.0.0.1:8000/api/update-data/6`, this.stateEandS);
         if(res.data.status === 200) {
             document.location.href = "http://localhost:3000/#ResumeSection";
             document.location.reload();
