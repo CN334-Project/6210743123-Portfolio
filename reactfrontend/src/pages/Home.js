@@ -5,7 +5,6 @@ import axios from 'axios';
 import './Home.css';
 import HomePage from './components/HomePage';
 import ProfilePage from './components/ProfilePage';
-import EducationPage from './components/EducationPage';
 import ProjectPage from './components/ProjectPage';
 import ResumePage from './components/ResumePage';
 import ContactPage from './components/ContactPage';
@@ -54,7 +53,6 @@ class Home extends Component {
                         <ul className="nav_links">
                             <li><a href="#HomeSection">HOME</a></li>
                             <li><a href="#ProfileSection">PROFILE</a></li>
-                            <li><a href="#EducationSection">EDUCATION</a></li>
                             <li><a href="#ProjectSection">PROJECT</a></li>
                             <li><a href="#ResumeSection">RESUME</a></li>
                             <li><a href="#ContactSection">CONTACT</a></li>
@@ -67,9 +65,6 @@ class Home extends Component {
                     </div>
                     <div id="ProfileSection" className="ProfileSection">
                         <ProfilePage />
-                    </div>
-                    <div id="EducationSection" className="EducationSection">
-                        <EducationPage />
                     </div>
                     <div id="ProjectSection" className="ProjectSection">
                         <ProjectPage />

@@ -78,12 +78,6 @@ header {
     scroll-snap-align: start;
 }
 
-.EducationSection {
-    background-color: #ecf0f3;
-    height: 95.7vh; 
-    scroll-snap-align: start;
-}
-
 .ProjectSection {
     background-color: #ecf0f3;
     height: 95.7vh;
