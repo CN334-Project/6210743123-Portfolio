@@ -47,7 +47,7 @@
     margin-top: 30px;
     margin-left: 20px;
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 10px;
     background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -128,7 +128,7 @@
     height: 745px;
     margin-top: 30px;
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 10px;
     background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
     position: relative;

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.projectpage .bar {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.projectpage .bar .welcome .hide {
+    color: rgba(0, 0, 0, 0);
+}
+
+.projectpage .bar .welcome .subtitle {
+    padding-top: 60px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ff014f;
+}
+
+.projectpage .bar .welcome .title {
+    padding-top: 10px;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+/* .rowone */
+.projectpage .rowone {
+    text-align: center;
+    margin-top: 2%;
+}
+
+/* .rowone .boxone */
+.projectpage .rowone .boxone {
+    width: 400px;
+    height: 420px;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.projectpage .rowone .boxone img {
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+}
+
+.projectpage .rowone .boxone .application {
+    text-align: left;
+    color: #ff014f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.projectpage .rowone .boxone .nameapplication {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+/* .rowone .boxtwo */
+.projectpage .rowone .boxtwo {
+    width: 400px;
+    height: 420px;
+    margin-left: 2%;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.projectpage .rowone .boxtwo img {
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+}
+
+.projectpage .rowone .boxtwo .application {
+    text-align: left;
+    color: #ff014f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.projectpage .rowone .boxtwo .nameapplication {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+/* .rowone .boxthree */
+.projectpage .rowone .boxthree {
+    width: 400px;
+    height: 420px;
+    margin-left: 2%;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.projectpage .rowone .boxthree img {
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+}
+
+.projectpage .rowone .boxthree .application {
+    text-align: left;
+    color: #ff014f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.projectpage .rowone .boxthree .nameapplication {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+/* .rowtwo */
+.projectpage .rowtwo {
+    text-align: center;
+    margin-top: 2%;
+}
+
+/* .rowtwo .boxone */
+.projectpage .rowtwo .boxone {
+    width: 400px;
+    height: 420px;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.projectpage .rowtwo .boxone img {
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+}
+
+.projectpage .rowtwo .boxone .application {
+    text-align: left;
+    color: #ff014f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.projectpage .rowtwo .boxone .nameapplication {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+/* .rowtwo .boxtwo */
+.projectpage .rowtwo .boxtwo {
+    width: 400px;
+    height: 420px;
+    margin-left: 2%;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.projectpage .rowtwo .boxtwo img {
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+}
+
+.projectpage .rowtwo .boxtwo .application {
+    text-align: left;
+    color: #ff014f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.projectpage .rowtwo .boxtwo .nameapplication {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+/* .rowtwo .boxthree */
+.projectpage .rowtwo .boxthree {
+    width: 400px;
+    height: 420px;
+    margin-left: 2%;
+    display: inline-block;
+    border-radius: 20px;
+    background-image: linear-gradient(315deg, #ecf0f3 50%, rgba(0, 0, 0, 0.08) 100%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style: none;
+}
+
+.projectpage .rowtwo .boxthree img {
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+}
+
+.projectpage .rowtwo .boxthree .application {
+    text-align: left;
+    color: #ff014f;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.projectpage .rowtwo .boxthree .nameapplication {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 35px;
+}

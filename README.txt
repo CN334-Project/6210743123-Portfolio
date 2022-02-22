@@ -29,82 +29,117 @@ your name { Ex. Heammapoom Wittayawarojkit}
 
 2.
 Title Name
+Nickname
+
+Details
+your nickname { Ex. Poom}
+
+3.
+Title Name
 Date
 
 Details
 your birthday { Ex. 04/05/2543}
 
-3.
+4.
 Title Name
 Phone
 
 Details
 your phone { Ex. 0958920912}
 
-4.
+5.
 Title Name
-Nickname
+Email
 
 Details
-your nickname { Ex. Poom}
+your Email { Ex. heammapoom@gmail.com}
 
-5.
+6.
+Title Name
+Address
+
+Details
+your Address { Ex. 666/999 Klong Luang, Prathumthani 12120}
+
+7.
+Title Name
+FacebookURL
+
+Details
+your FacebookURL { Ex. https://www.facebook.com/}
+
+8.
+Title Name
+InstagramURL
+
+Details
+your FacebookURL { Ex. https://www.instagram.com/}
+
+9.
+Title Name
+LinkedinURL
+
+Details
+your FacebookURL { Ex. https://www.linkedin.com/}
+
+10.
 Title Name
 Description
 
 Details
 your description
 
-6.
+11.
 Title Name
 HSyear
 
 Details
 high school year { Ex. 2013 - 2018}
 
-7.
+12.
 Title Name
 HSname
 
 Details
 high school name
 
-8.
+13.
 Title Name
 HSdepartment
 
 Details
 high school department { Ex. Math Sci}
 
-9.
+14.
 Title Name
 HSgpa
 
 Details
 high school gpa { Ex. 4.00}
 
-10.
+15.
 Title Name
 BDyear
 
 Details
 university year { Ex. 2019 - Present}
 
-11.
+16.
 Title Name
 BDname
 
 Details
 university name
 
-12.
+17.
 Title Name
 BDdepartment
 
 Details
 university department { Ex. Engineering}
 
-13.
+18.
 Title Name
 BDgpa
 

@@ -24,6 +24,10 @@ class HomePage extends Component {
         var nickname = "";
         var description = "";
 
+        var myfacebook = "";
+        var myinstagram = "";
+        var mylinkedin = "";
+
         nickname =
         this.state.datas.map( (item) => {
             if(item.title == "Nickname") {
@@ -40,6 +44,33 @@ class HomePage extends Component {
                     <p className="description" key={item.id}>{item.detail}</p>
                 );
             }    
+        });
+
+        myfacebook =
+        this.state.datas.map( (item) => {
+            if(item.title == "FacebookURL") {
+                return (
+                    <li key={item.id}><a href={item.detail} target="_blank"><img src={require('./assets/images/icons/icons-facebook.png')} alt="Icons Images"/></a></li>
+                );
+            } 
+        });
+
+        myinstagram =
+        this.state.datas.map( (item) => {
+            if(item.title == "InstagramURL") {
+                return (
+                    <li key={item.id}><a href={item.detail} target="_blank"><img src={require('./assets/images/icons/icons-instagram.png')} alt="Icons Images"/></a></li>
+                );
+            } 
+        });
+
+        mylinkedin =
+        this.state.datas.map( (item) => {
+            if(item.title == "LinkedinURL") {
+                return (
+                    <li key={item.id}><a href={item.detail} target="_blank"><img src={require('./assets/images/icons/icons-linkedin.png')} alt="Icons Images"/></a></li>
+                );
+            } 
         });
             
 
@@ -58,9 +89,9 @@ class HomePage extends Component {
                                 <div className="social-share-inner-left">
                                     <span className="title">FIND WITH ME</span>
                                     <ul className="skill-share d-flex liststyle">
-                                        <li><a  href="https://www.instagram.com/p2omhmp/" target="_blank"><img src={require('./assets/images/icons/icons-facebook.png')} alt="Icons Images"/></a></li>
-                                        <li><a  href="https://www.instagram.com/p2omhmp/" target="_blank"><img src={require('./assets/images/icons/icons-instagram.png')} alt="Icons Images"/></a></li>
-                                        <li><a  href="https://www.linkedin.com/in/heammapoom-wittayawarojkit-28a172132/" target="_blank"><img src={require('./assets/images/icons/icons-linkedin.png')} alt="Icons Images"/></a></li>
+                                        {myfacebook}
+                                        {myinstagram}
+                                        {mylinkedin}
                                     </ul>
                                 </div>
                             </div>
@@ -68,7 +99,11 @@ class HomePage extends Component {
                                 <div className="skill-share-inner">
                                     <span className="title">BEST SKILL ON</span>
                                     <ul className="skill-share d-flex liststyle">
+                                        <li><img src={require('./assets/images/icons/icons-python.png')} alt="Icons Images"/></li>
+                                        <li><img src={require('./assets/images/icons/icons-java.png')} alt="Icons Images"/></li>
                                         <li><img src={require('./assets/images/icons/icons-javascript.png')} alt="Icons Images"/></li>
+                                        <li><img src={require('./assets/images/icons/icons-html5.png')} alt="Icons Images"/></li>
+                                        {/* <li><img src={require('./assets/images/icons/icons-css3.png')} alt="Icons Images"/></li> */}
                                     </ul>
                                 </div>
                             </div>

@@ -43,6 +43,78 @@ class ContactPage extends Component {
     }
 
     render() {
+
+        var fullname = "";
+        var myphone = "";
+        var myemail = "";
+        var myaddress = "";
+        var myfacebook = "";
+        var myinstagram = "";
+        var mylinkedin = "";
+
+        fullname =
+        this.state.datas.map( (item) => {
+            if(item.title == "Name") {
+                return (
+                    <h1 className="name" key={item.id}>{item.detail}</h1>
+                );
+            } 
+        });
+
+        myphone =
+        this.state.datas.map( (item) => {
+            if(item.title == "Phone") {
+                return (
+                    <span className="subdescription" key={item.id}>{item.detail}</span>
+                );
+            } 
+        });
+
+        myemail =
+        this.state.datas.map( (item) => {
+            if(item.title == "Email") {
+                return (
+                    <span className="subdescription" key={item.id}>{item.detail}</span>
+                );
+            } 
+        });
+
+        myaddress =
+        this.state.datas.map( (item) => {
+            if(item.title == "Address") {
+                return (
+                    <span className="subdescription" key={item.id}>{item.detail}</span>
+                );
+            } 
+        });
+
+        myfacebook =
+        this.state.datas.map( (item) => {
+            if(item.title == "FacebookURL") {
+                return (
+                    <li key={item.id}><a href={item.detail} target="_blank"><img src={require('./assets/images/icons/icons-facebook.png')} alt="Icons Images"/></a></li>
+                );
+            } 
+        });
+
+        myinstagram =
+        this.state.datas.map( (item) => {
+            if(item.title == "InstagramURL") {
+                return (
+                    <li key={item.id}><a href={item.detail} target="_blank"><img src={require('./assets/images/icons/icons-instagram.png')} alt="Icons Images"/></a></li>
+                );
+            } 
+        });
+
+        mylinkedin =
+        this.state.datas.map( (item) => {
+            if(item.title == "LinkedinURL") {
+                return (
+                    <li key={item.id}><a href={item.detail} target="_blank"><img src={require('./assets/images/icons/icons-linkedin.png')} alt="Icons Images"/></a></li>
+                );
+            } 
+        });
+
         return (
             <div className="contactpage">
                 <div className="bar">
@@ -58,17 +130,17 @@ class ContactPage extends Component {
                     <div className="splitleft">
                         <div className="welcome">
                             <div className="contact">
-                                <h1 className="name">Heammapoom Wittayawarojkit</h1>
+                                {fullname}
                                 <h2 className="business">Software engineering student</h2>
                                 <h2 className="description">I am available for freelance work. Connect with me via and call in to my account.</h2>
-                                <h2 className="description">Phone : <span className="subdescription">0958920912</span></h2>
-                                <h2 className="description">Email : <span className="subdescription">heammapoom@gmail.com</span></h2>
-                                <h2 className="description">Address : <span className="subdescription">666/999 Klong Luang, Prathumthani 12120</span></h2>
+                                <h2 className="description">Phone : {myphone}</h2>
+                                <h2 className="description">Email : {myemail}</h2>
+                                <h2 className="description">Address : {myaddress}</h2>
                                 <h3 className="findwithme">FIND WITH ME</h3>
                                 <ul className="skill-share d-flex liststyle">
-                                    <li><a  href="https://www.instagram.com/p2omhmp/" target="_blank"><img src={require('./assets/images/icons/icons-facebook.png')} alt="Icons Images"/></a></li>
-                                    <li><a  href="https://www.instagram.com/p2omhmp/" target="_blank"><img src={require('./assets/images/icons/icons-instagram.png')} alt="Icons Images"/></a></li>
-                                    <li><a  href="https://www.linkedin.com/in/heammapoom-wittayawarojkit-28a172132/" target="_blank"><img src={require('./assets/images/icons/icons-linkedin.png')} alt="Icons Images"/></a></li>
+                                    {myfacebook}
+                                    {myinstagram}
+                                    {mylinkedin}
                                 </ul>
                             </div>
                         </div>

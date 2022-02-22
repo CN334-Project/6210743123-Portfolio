@@ -52,7 +52,7 @@ class Home extends Component {
                     <nav>
                         <ul className="nav_links">
                             <li><a href="#HomeSection">HOME</a></li>
-                            <li><a href="#ProfileSection">PROFILE</a></li>
+                            {/* <li><a href="#ProfileSection">PROFILE</a></li> */}
                             <li><a href="#ProjectSection">PROJECT</a></li>
                             <li><a href="#ResumeSection">RESUME</a></li>
                             <li><a href="#ContactSection">CONTACT</a></li>
@@ -63,9 +63,9 @@ class Home extends Component {
                     <div id="HomeSection" className="HomeSection">
                         <HomePage />
                     </div>
-                    <div id="ProfileSection" className="ProfileSection">
+                    {/* <div id="ProfileSection" className="ProfileSection">
                         <ProfilePage />
-                    </div>
+                    </div> */}
                     <div id="ProjectSection" className="ProjectSection">
                         <ProjectPage />
                     </div>

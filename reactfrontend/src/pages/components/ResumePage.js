@@ -196,7 +196,7 @@ class ResumePage extends Component {
                                                 </li>
 
                                                 <li>
-                                                    <h2 className="languages">HTML</h2>
+                                                    <h2 className="languages">HTML 5</h2>
                                                     <span className="bar"><span className="html"></span></span>
                                                 </li>
 
